@@ -12,9 +12,8 @@ export async function addItem(req, res) {
     }
 
     const itemIndex = cart.items.findIndex(item => item.productId.toString() === productId);
-
     if (itemIndex > -1) {
-      cart.items[itemIndex].quantity += quantity;
+      cart.items[itemIndex].quantity += 1;
     } else {
       cart.items.push({ productId, quantity });
     }

@@ -23,6 +23,17 @@ export const createOrder = async (req, res) => {
             // For example: Notify the user or update the order status
             await orderModel.findByIdAndUpdate(order._id, { status: "Processed" });
             console.log("Order status updated to 'Processed'.");
+            setTimeout(async () => {
+                try {
+                    console.log("Running delayed function after 30 seconds...");
+                    // Add your delayed logic here
+                    // For example: Notify the user or update the order status
+                    await orderModel.findByIdAndUpdate(order._id, { status: "Delivered" });
+                    console.log("Order status updated to 'Delivered'.");
+                } catch (error) {
+                    console.error("Error in delayed function:", error);
+                }
+            }, 30000);
         } catch (error) {
             console.error("Error in delayed function:", error);
         }
