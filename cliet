@@ -1,0 +1,71 @@
+pipeline {
+    agent any
+
+    environment {
+        REACT_APP_API_URL = 'https://api.rkoko.online'
+        SERVER_USER = 'root'
+        SERVER_IP = '140.245.11.98'
+        SERVER_PATH = '/home/rkoko/domains/foodie.rkoko.online/public_html'
+        NVM_DIR = "${env.HOME}/.nvm"
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Lazy-seed/foodie_client.git'
+            }
+        }
+
+        stage('Install Node.js and Dependencies') {
+            steps {
+                sh '''
+                    # Install Node.js using nvm
+                    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+                    export NVM_DIR="$HOME/.nvm"
+                    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                    nvm install --lts
+                    nvm use --lts
+                    
+                    # Install Dependencies
+                    npm install
+                '''
+            }
+        }
+
+        stage('Build React App') {
+            steps {
+                sh '''
+                    export NVM_DIR="$HOME/.nvm"
+                    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                    
+                    npm run build
+                '''
+            }
+        }
+
+        stage('Deploy to Server') {
+           steps {
+                sh '''
+                        # Define variables
+                        PASSWORD='aryan34'
+            
+                        # Clear old files and copy new build
+                        sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no root@140.245.11.98 "rm -rf $SERVER_PATH/*"
+                        sshpass -p "$PASSWORD" scp -o StrictHostKeyChecking=no -r build/* root@140.245.11.98:$SERVER_PATH/
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment successful!'
+        }
+        failure {
+            echo 'Deployment failed. Check the logs for more details.'
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

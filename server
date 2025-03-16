@@ -1,0 +1,57 @@
+pipeline {
+  agent any
+
+  environment {
+      SERVER_USER = 'root'
+      SERVER_IP = '140.245.11.98'
+      SERVER_PATH = '/home/rkoko/domains/foodie.api.rkoko.online/public_html'
+      APP_NAME = 'foodie-api'
+      NVM_DIR = "${env.HOME}/.nvm"
+
+  }
+
+  stages {
+      stage('Clone Repository') {
+          steps {
+              git branch: 'main', url: 'https://github.com/Lazy-seed/foodie_server.git'
+          }
+      }
+
+      stage('Deploy to Server') {
+          steps {
+              sh '''
+                  PASSWORD='aryan34'
+
+                  # Transfer files to the server
+                  sshpass -p "$PASSWORD" rsync -avz --delete "$SERVER_PATH"/ "$SERVER_USER"@"$SERVER_IP":"$SERVER_PATH"/
+
+                  # Ensure we run the commands inside the correct directory
+                  sshpass -p "$PASSWORD" ssh "$SERVER_USER"@"$SERVER_IP" << 'EOF'
+                      cd "$SERVER_PATH" || exit 1
+                      npm install
+                      pm2 delete "$APP_NAME" || true
+                      pm2 start server.js --name "$APP_NAME"
+                      pm2 save
+                  EOF
+              '''
+          }
+      }
+
+      stage('Restart Nginx') {
+          steps {
+              sh '''
+                  sshpass -p "$PASSWORD" ssh "$SERVER_USER"@"$SERVER_IP" "systemctl restart nginx"
+              '''
+          }
+      }
+  }
+
+  post {
+      success {
+          echo '🚀 Deployment successful!'
+      }
+      failure {
+          echo '⚠️ Deployment failed! Check logs.'
+      }
+  }
+}

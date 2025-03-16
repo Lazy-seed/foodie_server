@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
     const token = req.cookies.authToken; // Extract token from cookies
     if (!token) {
       return res.status(401).json({ message: "Access denied. No token provided." });
-    }
+  }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded; // Attach user data to the request object
