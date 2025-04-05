@@ -18,7 +18,7 @@ dotenv.config();
 
 const app = express();
 app.use(cookieParser());
-const allowedOrigins = ["*"]; 
+const allowedOrigins = ["https://foodie-24.netlify.app/", "http://localhost:3000"]; 
 
 // Middleware
 app.use(cors({ credentials: true, origin: (allowedOrigins, callback) => {

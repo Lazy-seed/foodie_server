@@ -18,7 +18,7 @@ export const loginController = async (req, res) => {
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // Use secure cookies in production
+      secure:true, // Use secure cookies in production
       sameSite: "None", // Prevent CSRF
       maxAge: 36000000, // Cookie expires in 1 hour
     });
@@ -56,7 +56,7 @@ export const signupController = async (req, res) => {
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // Use secure cookies in production
+      secure:true, // Use secure cookies in production
       sameSite: "None", // Prevent CSRF
       maxAge: 36000000, // Cookie expires in 1 hour
     });
