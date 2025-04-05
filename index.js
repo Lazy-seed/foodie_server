@@ -18,7 +18,7 @@ dotenv.config();
 
 const app = express();
 app.use(cookieParser());
-const allowedOrigins = ["http://localhost:3000"]; 
+const allowedOrigins = ["*"]; 
 
 // Middleware
 app.use(cors({ credentials: true, origin: (allowedOrigins, callback) => {
