@@ -17,7 +17,7 @@ export const loginController = async (req, res) => {
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1day" });
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
-      httpOnly: true,
+      httpOnly: false,
       secure:true, // Use secure cookies in production
       sameSite: "None", // Prevent CSRF
       maxAge: 36000000, // Cookie expires in 1 hour
@@ -55,7 +55,7 @@ export const signupController = async (req, res) => {
     const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1day" });
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
-      httpOnly: true,
+      httpOnly: false,
       secure:true, // Use secure cookies in production
       sameSite: "None", // Prevent CSRF
       maxAge: 36000000, // Cookie expires in 1 hour
