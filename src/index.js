@@ -2,6 +2,8 @@
 import express, { json } from "express";
 import cors from "cors";
 import dotenv from "dotenv"
+import helmet from "helmet";
+import compression from "compression";
 import ConnectDB from "./config/DB_connection.js";
 import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
@@ -11,22 +13,38 @@ import storeRoutes from "./routes/storeRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import Razorpay from "razorpay";
 import crypto from "crypto"
+import { apiLimiter } from "./middlewares/rateLimiter.js";
+
 dotenv.config();
 // import categoryRoutes from "./routes/categoryRoutes";
 // import foodRoutes from "./routes/foodRoutes";
 // import contactRoutes from "./routes/contactRoutes";
 
 const app = express();
+
+// Security & Performance Middleware
+app.use(helmet());
+app.use(compression());
 app.use(cookieParser());
-const allowedOrigins = ["https://foodie-24.netlify.app/", "http://localhost:3000"]; 
+
+const allowedOrigins = ["https://foodie-24.netlify.app/", "http://localhost:3000", "http://localhost:3001"];
 
 // Middleware
-app.use(cors({ credentials: true, origin: (allowedOrigins, callback) => {
-    callback(null, allowedOrigins || "*"); // Allow all origins
-  } }));
+app.use(cors({
+    credentials: true, origin: (origin, callback) => {
+        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+}));
 app.use(json());
-// Routes
 
+// Rate Limiting
+app.use("/api/", apiLimiter);
+
+// Routes
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use('/api/cart', cartRoutes);

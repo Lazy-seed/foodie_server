@@ -2,6 +2,8 @@ import Cart from '../models/cartModel.js';
 import orderModel from "../models/orderModel.js";
 
 
+import { sendEmail } from "../services/emailService.js";
+
 export const createOrder = async (req, res) => {
     const address = req.body;
     const cart = await Cart.findOne({ userId: req.user.id }).populate('items.productId');
@@ -15,8 +17,24 @@ export const createOrder = async (req, res) => {
         };
     });
     const order = await orderModel.create({ userId: req.user.id, shippingAddress: { ...address }, paymentMethod: "ONLINE", note: address.orderNotes, items: itemsss, totalPrice });
-     // Schedule a function to run after 30 seconds
-     setTimeout(async () => {
+
+    // Send Order Confirmation Email
+    const emailContent = `
+        <h1>Order Confirmation</h1>
+        <p>Thank you for your order!</p>
+        <p>Order ID: ${order._id}</p>
+        <p>Total Price: ₹${totalPrice}</p>
+        <p>We will notify you when your order is processed.</p>
+    `;
+
+    try {
+        await sendEmail(req.user.email, "Order Confirmation", emailContent);
+    } catch (error) {
+        console.error("Failed to send order confirmation email:", error);
+    }
+
+    // Schedule a function to run after 30 seconds
+    setTimeout(async () => {
         try {
             console.log("Running delayed function after 30 seconds...");
             // Add your delayed logic here
@@ -38,7 +56,7 @@ export const createOrder = async (req, res) => {
             console.error("Error in delayed function:", error);
         }
     }, 30000);
-    res.status(200).json({message:"Order created successfully",order});
+    res.status(200).json({ message: "Order created successfully", order });
 
 }
 
