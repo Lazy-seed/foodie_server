@@ -11,6 +11,8 @@ import cartRoutes from "./routes/cartRoutes.js";
 import cookieParser from "cookie-parser";
 import storeRoutes from "./routes/storeRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
+import addressRoutes from "./routes/addressRoutes.js";
+import recommendationRoutes from "./routes/recommendationRoutes.js";
 import Razorpay from "razorpay";
 import crypto from "crypto"
 import { apiLimiter } from "./middlewares/rateLimiter.js";
@@ -50,6 +52,8 @@ app.use("/api/users", userRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/store', storeRoutes);
 app.use('/api/order', orderRoutes);
+app.use('/api/address', addressRoutes);
+app.use('/api/recommendations', recommendationRoutes);
 
 // Connect to MongoDB
 ConnectDB()
