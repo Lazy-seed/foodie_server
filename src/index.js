@@ -22,6 +22,7 @@ dotenv.config();
 // import categoryRoutes from "./routes/categoryRoutes";
 // import foodRoutes from "./routes/foodRoutes";
 // import contactRoutes from "./routes/contactRoutes";
+import demoRoutes from "./routes/demoRoutes.js";
 
 const app = express();
 
@@ -50,6 +51,7 @@ app.use("/api/", apiLimiter);
 // Routes
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/demo", demoRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/store', storeRoutes);
 app.use('/api/order', orderRoutes);
