@@ -77,6 +77,15 @@ export const updateOrderStatus = async (req, res) => {
         }
 
         res.status(200).json({ message: 'Order status updated successfully', order });
+
+        // Emit real-time update
+        try {
+            const { getIO } = await import('../socket.js');
+            const io = getIO();
+            io.to(order.userId._id.toString()).emit('orderStatusUpdated', { orderId: order._id, status: order.status });
+        } catch (socketError) {
+            console.error('Socket emit error:', socketError);
+        }
     } catch (error) {
         console.error('Update order status error:', error);
         res.status(500).json({ message: 'Failed to update order status', error: error.message });

@@ -41,6 +41,15 @@ export const createOrder = async (req, res) => {
             // For example: Notify the user or update the order status
             await orderModel.findByIdAndUpdate(order._id, { status: "Processed" });
             console.log("Order status updated to 'Processed'.");
+
+            // Emit real-time update
+            try {
+                const { getIO } = await import('../socket.js');
+                const io = getIO();
+                io.to(order.userId.toString()).emit('orderStatusUpdated', { orderId: order._id, status: "Processed" });
+            } catch (socketError) {
+                console.error('Socket emit error:', socketError);
+            }
             setTimeout(async () => {
                 try {
                     console.log("Running delayed function after 30 seconds...");
@@ -48,6 +57,15 @@ export const createOrder = async (req, res) => {
                     // For example: Notify the user or update the order status
                     await orderModel.findByIdAndUpdate(order._id, { status: "Delivered" });
                     console.log("Order status updated to 'Delivered'.");
+
+                    // Emit real-time update
+                    try {
+                        const { getIO } = await import('../socket.js');
+                        const io = getIO();
+                        io.to(order.userId.toString()).emit('orderStatusUpdated', { orderId: order._id, status: "Delivered" });
+                    } catch (socketError) {
+                        console.error('Socket emit error:', socketError);
+                    }
                 } catch (error) {
                     console.error("Error in delayed function:", error);
                 }

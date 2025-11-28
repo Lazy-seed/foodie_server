@@ -110,5 +110,12 @@ app.post("/api/verify-payment", async (req, res) => {
     }
 });
 // Start server
+import { createServer } from "http";
+import { initSocket } from "./socket.js";
+
+const server = createServer(app);
+const io = initSocket(server);
+
+// Start server
 const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
