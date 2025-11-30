@@ -76,7 +76,7 @@ app.post("/api/create-order", async (req, res) => {
         const { amount } = req.body;
 
         const options = {
-            amount: amount, // Convert ₹ to paise
+            amount: amount * 100, // Convert ₹ to paise
             currency: "INR",
             receipt: `order_rcptid_${Date.now()}`,
             payment_capture: 1, // Auto-capture payment
