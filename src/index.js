@@ -32,7 +32,7 @@ app.use(helmet());
 app.use(compression());
 app.use(cookieParser());
 
-const allowedOrigins = ["https://foodie-24.netlify.app/", "http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["https://foodie-24.netlify.app", "http://localhost:3000", "http://localhost:3001"];
 
 // Middleware
 app.use(cors({
