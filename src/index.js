@@ -14,6 +14,7 @@ import orderRoutes from "./routes/orderRoutes.js";
 import addressRoutes from "./routes/addressRoutes.js";
 import recommendationRoutes from "./routes/recommendationRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
+import chatRoutes from "./routes/chatRoutes.js";
 import Razorpay from "razorpay";
 import crypto from "crypto"
 import { apiLimiter } from "./middlewares/rateLimiter.js";
@@ -58,6 +59,7 @@ app.use('/api/order', orderRoutes);
 app.use('/api/address', addressRoutes);
 app.use('/api/recommendations', recommendationRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Connect to MongoDB
 ConnectDB()

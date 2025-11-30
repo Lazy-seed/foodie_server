@@ -1,15 +1,15 @@
 import Product from "../models/Product.js";
-import redisClient from "../config/redis.js";
+// import redisClient from "../config/redis.js";
 
 const CACHE_EXPIRATION = 3600; // 1 hour
 
 // Helper to clear product cache
-const clearProductCache = async () => {
-  const keys = await redisClient.keys('products:*');
-  if (keys.length > 0) {
-    await redisClient.del(keys);
-  }
-};
+// const clearProductCache = async () => {
+//   const keys = await redisClient.keys('products:*');
+//   if (keys.length > 0) {
+//     await redisClient.del(keys);
+//   }
+// };
 
 // Create Product
 export const createProduct = async (req, res) => {
@@ -32,13 +32,13 @@ export const createProduct = async (req, res) => {
 export const getAllProducts = async (req, res) => {
   try {
     const { category, search, sort, page = 1, limit = 9 } = req.query;
-    const cacheKey = `products:${JSON.stringify(req.query)}`;
+    // const cacheKey = `products:${JSON.stringify(req.query)}`;
 
     // Check cache
-    const cachedData = await redisClient.get(cacheKey);
-    if (cachedData) {
-      return res.status(200).json(JSON.parse(cachedData));
-    }
+    // const cachedData = await redisClient.get(cacheKey);
+    // if (cachedData) {
+    //   return res.status(200).json(JSON.parse(cachedData));
+    // }
 
     // Build the query object
     const query = {};
@@ -92,7 +92,7 @@ export const getAllProducts = async (req, res) => {
     };
 
     // Set cache
-    await redisClient.setEx(cacheKey, CACHE_EXPIRATION, JSON.stringify(responseData));
+    // await redisClient.setEx(cacheKey, CACHE_EXPIRATION, JSON.stringify(responseData));
 
     res.status(200).json(responseData);
   } catch (err) {
@@ -106,17 +106,17 @@ export const getAllProducts = async (req, res) => {
 // Get Product by ID
 export const getProductById = async (req, res) => {
   try {
-    const cacheKey = `product:${req.params.id}`;
-    const cachedProduct = await redisClient.get(cacheKey);
+    // const cacheKey = `product:${req.params.id}`;
+    // const cachedProduct = await redisClient.get(cacheKey);
 
-    if (cachedProduct) {
-      return res.status(200).json(JSON.parse(cachedProduct));
-    }
+    // if (cachedProduct) {
+    //   return res.status(200).json(JSON.parse(cachedProduct));
+    // }
 
     const product = await Product.findById(req.params.id);
     if (!product) return res.status(404).json({ message: "Product not found" });
 
-    await redisClient.setEx(cacheKey, CACHE_EXPIRATION, JSON.stringify(product));
+    // await redisClient.setEx(cacheKey, CACHE_EXPIRATION, JSON.stringify(product));
 
     res.status(200).json(product);
   } catch (err) {
@@ -139,7 +139,7 @@ export const updateProduct = async (req, res) => {
     if (!product) return res.status(404).json({ message: "Product not found" });
 
     // Invalidate caches
-    await redisClient.del(`product:${req.params.id}`);
+    // await redisClient.del(`product:${req.params.id}`);
     await clearProductCache();
 
     res.status(200).json({ message: "Product updated successfully", product });
