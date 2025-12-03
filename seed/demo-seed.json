@@ -1,20 +1,2104 @@
 {
     "users": [
         {
-            "name": "Demo User",
-            "email": "demo-user@foodie.com",
-            "password": "demoPassword123!",
+            "name": "Aarav Sharma",
+            "email": "user01@foodie.com",
+            "password": "Test@123",
             "role": "user",
-            "phone": "9999999999",
-            "isBlocked": false
+            "phone": "9876500001",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aarav",
+                "lastName": "Sharma",
+                "address": {
+                    "line1": "12 MG Road",
+                    "line2": "Near Central Park"
+                },
+                "city": "Mumbai",
+                "postcode": "400001",
+                "contact": "9876500001",
+                "isDefault": true
+            }
         },
         {
-            "name": "Demo Admin",
-            "email": "demo-admin@foodie.com",
-            "password": "demoPassword123!",
-            "role": "admin",
-            "phone": "8888888888",
-            "isBlocked": false
+            "name": "Vivaan Mehta",
+            "email": "user02@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500002",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Vivaan",
+                "lastName": "Mehta",
+                "address": {
+                    "line1": "5 Rose Apartments",
+                    "line2": "Sector 12"
+                },
+                "city": "Pune",
+                "postcode": "411001",
+                "contact": "9876500002",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Aditya Verma",
+            "email": "user03@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500003",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aditya",
+                "lastName": "Verma",
+                "address": {
+                    "line1": "24 Green Park",
+                    "line2": ""
+                },
+                "city": "Delhi",
+                "postcode": "110016",
+                "contact": "9876500003",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Arjun Singh",
+            "email": "user04@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500004",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Arjun",
+                "lastName": "Singh",
+                "address": {
+                    "line1": "11 Patel Colony",
+                    "line2": "Block B"
+                },
+                "city": "Noida",
+                "postcode": "201301",
+                "contact": "9876500004",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Reyansh Gupta",
+            "email": "user05@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500005",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Reyansh",
+                "lastName": "Gupta",
+                "address": {
+                    "line1": "8 Lotus Street",
+                    "line2": ""
+                },
+                "city": "Kolkata",
+                "postcode": "700001",
+                "contact": "9876500005",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Mohammad Ali",
+            "email": "user06@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500006",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Mohammad",
+                "lastName": "Ali",
+                "address": {
+                    "line1": "3 Sunrise Apts",
+                    "line2": "Flat 402"
+                },
+                "city": "Lucknow",
+                "postcode": "226001",
+                "contact": "9876500006",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kabir Yadav",
+            "email": "user07@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500007",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kabir",
+                "lastName": "Yadav",
+                "address": {
+                    "line1": "77 Hill View",
+                    "line2": ""
+                },
+                "city": "Bengaluru",
+                "postcode": "560001",
+                "contact": "9876500007",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Krishna Nair",
+            "email": "user08@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500008",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Krishna",
+                "lastName": "Nair",
+                "address": {
+                    "line1": "2 Sea View",
+                    "line2": "Ernakulam"
+                },
+                "city": "Kochi",
+                "postcode": "682011",
+                "contact": "9876500008",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Dhruv Patil",
+            "email": "user09@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500009",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Dhruv",
+                "lastName": "Patil",
+                "address": {
+                    "line1": "45 Shivaji Nagar",
+                    "line2": ""
+                },
+                "city": "Nagpur",
+                "postcode": "440001",
+                "contact": "9876500009",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Rohan Kulkarni",
+            "email": "user10@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500010",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Rohan",
+                "lastName": "Kulkarni",
+                "address": {
+                    "line1": "18 Mango Lane",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411002",
+                "contact": "9876500010",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Saanvi Deshmukh",
+            "email": "user11@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500011",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Saanvi",
+                "lastName": "Deshmukh",
+                "address": {
+                    "line1": "9 Garden Road",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400004",
+                "contact": "9876500011",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Anika Iyer",
+            "email": "user12@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500012",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Anika",
+                "lastName": "Iyer",
+                "address": {
+                    "line1": "31 Lake Street",
+                    "line2": "Near Mall"
+                },
+                "city": "Chennai",
+                "postcode": "600005",
+                "contact": "9876500012",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Diya Menon",
+            "email": "user13@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500013",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Diya",
+                "lastName": "Menon",
+                "address": {
+                    "line1": "12 Palm Street",
+                    "line2": ""
+                },
+                "city": "Trivandrum",
+                "postcode": "695001",
+                "contact": "9876500013",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Aadhya Reddy",
+            "email": "user14@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500014",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aadhya",
+                "lastName": "Reddy",
+                "address": {
+                    "line1": "6 Amber Apartments",
+                    "line2": ""
+                },
+                "city": "Hyderabad",
+                "postcode": "500001",
+                "contact": "9876500014",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Myra Choudhary",
+            "email": "user15@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500015",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Myra",
+                "lastName": "Choudhary",
+                "address": {
+                    "line1": "3 Ruby Road",
+                    "line2": ""
+                },
+                "city": "Jaipur",
+                "postcode": "302001",
+                "contact": "9876500015",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ishita Bansal",
+            "email": "user16@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500016",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ishita",
+                "lastName": "Bansal",
+                "address": {
+                    "line1": "20 Rose Villa",
+                    "line2": ""
+                },
+                "city": "Ahmedabad",
+                "postcode": "380001",
+                "contact": "9876500016",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kritika Soni",
+            "email": "user17@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500017",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kritika",
+                "lastName": "Soni",
+                "address": {
+                    "line1": "14 Hilltop",
+                    "line2": ""
+                },
+                "city": "Surat",
+                "postcode": "395001",
+                "contact": "9876500017",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Tara Mathur",
+            "email": "user18@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500018",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Tara",
+                "lastName": "Mathur",
+                "address": {
+                    "line1": "4 Ivy Apartments",
+                    "line2": ""
+                },
+                "city": "Indore",
+                "postcode": "452001",
+                "contact": "9876500018",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Nisha Pandey",
+            "email": "user19@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500019",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Nisha",
+                "lastName": "Pandey",
+                "address": {
+                    "line1": "27 Main Road",
+                    "line2": ""
+                },
+                "city": "Bhopal",
+                "postcode": "462001",
+                "contact": "9876500019",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Pooja Jha",
+            "email": "user20@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500020",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Pooja",
+                "lastName": "Jha",
+                "address": {
+                    "line1": "2 Park Lane",
+                    "line2": ""
+                },
+                "city": "Patna",
+                "postcode": "800001",
+                "contact": "9876500020",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Harsh Jain",
+            "email": "user21@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500021",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Harsh",
+                "lastName": "Jain",
+                "address": {
+                    "line1": "88 Silver Street",
+                    "line2": ""
+                },
+                "city": "Varanasi",
+                "postcode": "221001",
+                "contact": "9876500021",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Nikhil Tiwari",
+            "email": "user22@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500022",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Nikhil",
+                "lastName": "Tiwari",
+                "address": {
+                    "line1": "51 Oak Road",
+                    "line2": ""
+                },
+                "city": "Raipur",
+                "postcode": "492001",
+                "contact": "9876500022",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Sahil Bhat",
+            "email": "user23@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500023",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Sahil",
+                "lastName": "Bhat",
+                "address": {
+                    "line1": "7 River View",
+                    "line2": ""
+                },
+                "city": "Goa",
+                "postcode": "403001",
+                "contact": "9876500023",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kunal Saxena",
+            "email": "user24@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500024",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kunal",
+                "lastName": "Saxena",
+                "address": {
+                    "line1": "33 Maple Ave",
+                    "line2": ""
+                },
+                "city": "Meerut",
+                "postcode": "250001",
+                "contact": "9876500024",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Manish Tripathi",
+            "email": "user25@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500025",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Manish",
+                "lastName": "Tripathi",
+                "address": {
+                    "line1": "19 Sunrise Blvd",
+                    "line2": ""
+                },
+                "city": "Allahabad",
+                "postcode": "211001",
+                "contact": "9876500025",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ritesh Chauhan",
+            "email": "user26@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500026",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ritesh",
+                "lastName": "Chauhan",
+                "address": {
+                    "line1": "6 Market Street",
+                    "line2": ""
+                },
+                "city": "Gurugram",
+                "postcode": "122001",
+                "contact": "9876500026",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Jayant Tandon",
+            "email": "user27@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500027",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Jayant",
+                "lastName": "Tandon",
+                "address": {
+                    "line1": "21 Cedar Road",
+                    "line2": ""
+                },
+                "city": "Lucknow",
+                "postcode": "226002",
+                "contact": "9876500027",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Samar Kohli",
+            "email": "user28@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500028",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Samar",
+                "lastName": "Kohli",
+                "address": {
+                    "line1": "2 Lotus Park",
+                    "line2": ""
+                },
+                "city": "Shimla",
+                "postcode": "171001",
+                "contact": "9876500028",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Yash Vora",
+            "email": "user29@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500029",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Yash",
+                "lastName": "Vora",
+                "address": {
+                    "line1": "10 Marine Drive",
+                    "line2": ""
+                },
+                "city": "Ahmedabad",
+                "postcode": "380009",
+                "contact": "9876500029",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Atharv Sethi",
+            "email": "user30@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500030",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Atharv",
+                "lastName": "Sethi",
+                "address": {
+                    "line1": "4 Blue Hills",
+                    "line2": ""
+                },
+                "city": "Chandigarh",
+                "postcode": "160017",
+                "contact": "9876500030",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Karan Malhotra",
+            "email": "user31@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500031",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Karan",
+                "lastName": "Malhotra",
+                "address": {
+                    "line1": "7 Sunset Blvd",
+                    "line2": ""
+                },
+                "city": "Faridabad",
+                "postcode": "121002",
+                "contact": "9876500031",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Abhishek Rana",
+            "email": "user32@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500032",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Abhishek",
+                "lastName": "Rana",
+                "address": {
+                    "line1": "55 Park Avenue",
+                    "line2": ""
+                },
+                "city": "Guwahati",
+                "postcode": "781001",
+                "contact": "9876500032",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ravindra Jagtap",
+            "email": "user33@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500033",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ravindra",
+                "lastName": "Jagtap",
+                "address": {
+                    "line1": "3 Riverbank",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416001",
+                "contact": "9876500033",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Shivam Maurya",
+            "email": "user34@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500034",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Shivam",
+                "lastName": "Maurya",
+                "address": {
+                    "line1": "88 North End",
+                    "line2": ""
+                },
+                "city": "Agra",
+                "postcode": "282001",
+                "contact": "9876500034",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Gaurav More",
+            "email": "user35@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500035",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Gaurav",
+                "lastName": "More",
+                "address": {
+                    "line1": "22 Civic Center",
+                    "line2": ""
+                },
+                "city": "Thane",
+                "postcode": "400601",
+                "contact": "9876500035",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Anand Pawar",
+            "email": "user36@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500036",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Anand",
+                "lastName": "Pawar",
+                "address": {
+                    "line1": "9 Lake View",
+                    "line2": ""
+                },
+                "city": "Nashik",
+                "postcode": "422001",
+                "contact": "9876500036",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Rahul Sawant",
+            "email": "user37@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500037",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Rahul",
+                "lastName": "Sawant",
+                "address": {
+                    "line1": "16 Palm Grove",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416012",
+                "contact": "9876500037",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Shubham Lokhande",
+            "email": "user38@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500038",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Shubham",
+                "lastName": "Lokhande",
+                "address": {
+                    "line1": "48 Hill Road",
+                    "line2": ""
+                },
+                "city": "Aurangabad",
+                "postcode": "431001",
+                "contact": "9876500038",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Vikram Shetty",
+            "email": "user39@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500039",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Vikram",
+                "lastName": "Shetty",
+                "address": {
+                    "line1": "2 Ocean View",
+                    "line2": ""
+                },
+                "city": "Mangalore",
+                "postcode": "575001",
+                "contact": "9876500039",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Nitin Kharat",
+            "email": "user40@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500040",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Nitin",
+                "lastName": "Kharat",
+                "address": {
+                    "line1": "30 South Park",
+                    "line2": ""
+                },
+                "city": "Ludhiana",
+                "postcode": "141001",
+                "contact": "9876500040",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Meera Kadam",
+            "email": "user41@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500041",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Meera",
+                "lastName": "Kadam",
+                "address": {
+                    "line1": "10 Jasmine St",
+                    "line2": ""
+                },
+                "city": "Pimpri",
+                "postcode": "411018",
+                "contact": "9876500041",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Sneha Tavde",
+            "email": "user42@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500042",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Sneha",
+                "lastName": "Tavde",
+                "address": {
+                    "line1": "21 Elm Street",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416005",
+                "contact": "9876500042",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ritika Shinde",
+            "email": "user43@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500043",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ritika",
+                "lastName": "Shinde",
+                "address": {
+                    "line1": "6 Sunshine Rd",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411007",
+                "contact": "9876500043",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Vaishnavi Jagtap",
+            "email": "user44@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500044",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Vaishnavi",
+                "lastName": "Jagtap",
+                "address": {
+                    "line1": "9 Coral Ave",
+                    "line2": ""
+                },
+                "city": "Satara",
+                "postcode": "415001",
+                "contact": "9876500044",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Aishwarya Gawande",
+            "email": "user45@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500045",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aishwarya",
+                "lastName": "Gawande",
+                "address": {
+                    "line1": "12 Orchid Lane",
+                    "line2": ""
+                },
+                "city": "Wardha",
+                "postcode": "442001",
+                "contact": "9876500045",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Shruti Khandekar",
+            "email": "user46@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500046",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Shruti",
+                "lastName": "Khandekar",
+                "address": {
+                    "line1": "5 Palm Drive",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416004",
+                "contact": "9876500046",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Prachi Solanki",
+            "email": "user47@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500047",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Prachi",
+                "lastName": "Solanki",
+                "address": {
+                    "line1": "18 Oak Lane",
+                    "line2": ""
+                },
+                "city": "Vadodara",
+                "postcode": "390001",
+                "contact": "9876500047",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Payal Wagh",
+            "email": "user48@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500048",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Payal",
+                "lastName": "Wagh",
+                "address": {
+                    "line1": "7 Amber St",
+                    "line2": ""
+                },
+                "city": "Navi Mumbai",
+                "postcode": "400706",
+                "contact": "9876500048",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Smita Kurhade",
+            "email": "user49@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500049",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Smita",
+                "lastName": "Kurhade",
+                "address": {
+                    "line1": "33 Lake Ave",
+                    "line2": ""
+                },
+                "city": "Aurangabad",
+                "postcode": "431003",
+                "contact": "9876500049",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Madhuri Phadke",
+            "email": "user50@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500050",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Madhuri",
+                "lastName": "Phadke",
+                "address": {
+                    "line1": "44 Central Ave",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400021",
+                "contact": "9876500050",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Anand Goyal",
+            "email": "user51@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500051",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Anand",
+                "lastName": "Goyal",
+                "address": {
+                    "line1": "2 Silver St",
+                    "line2": ""
+                },
+                "city": "Bikaner",
+                "postcode": "334001",
+                "contact": "9876500051",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Amit Pandey",
+            "email": "user52@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500052",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Amit",
+                "lastName": "Pandey",
+                "address": {
+                    "line1": "8 Queen Street",
+                    "line2": ""
+                },
+                "city": "Dehradun",
+                "postcode": "248001",
+                "contact": "9876500052",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Sagar Joshi",
+            "email": "user53@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500053",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Sagar",
+                "lastName": "Joshi",
+                "address": {
+                    "line1": "16 Lakeview",
+                    "line2": ""
+                },
+                "city": "Rajkot",
+                "postcode": "360001",
+                "contact": "9876500053",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Omkar Borse",
+            "email": "user54@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500054",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Omkar",
+                "lastName": "Borse",
+                "address": {
+                    "line1": "29 Green Lane",
+                    "line2": ""
+                },
+                "city": "Solapur",
+                "postcode": "413001",
+                "contact": "9876500054",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Tejas Shirodkar",
+            "email": "user55@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500055",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Tejas",
+                "lastName": "Shirodkar",
+                "address": {
+                    "line1": "4 Harbor Rd",
+                    "line2": ""
+                },
+                "city": "Panaji",
+                "postcode": "403001",
+                "contact": "9876500055",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Yuvraj More",
+            "email": "user56@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500056",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Yuvraj",
+                "lastName": "More",
+                "address": {
+                    "line1": "77 King St",
+                    "line2": ""
+                },
+                "city": "Sangli",
+                "postcode": "416416",
+                "contact": "9876500056",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Chetan Bhise",
+            "email": "user57@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500057",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Chetan",
+                "lastName": "Bhise",
+                "address": {
+                    "line1": "61 East End",
+                    "line2": ""
+                },
+                "city": "Belgaum",
+                "postcode": "590001",
+                "contact": "9876500057",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Sumit Gade",
+            "email": "user58@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500058",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Sumit",
+                "lastName": "Gade",
+                "address": {
+                    "line1": "12 Hilltop Rd",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416010",
+                "contact": "9876500058",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Tarun Dhoke",
+            "email": "user59@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500059",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Tarun",
+                "lastName": "Dhoke",
+                "address": {
+                    "line1": "3 Amber Villa",
+                    "line2": ""
+                },
+                "city": "Jalgaon",
+                "postcode": "425001",
+                "contact": "9876500059",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Prashant Hale",
+            "email": "user60@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500060",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Prashant",
+                "lastName": "Hale",
+                "address": {
+                    "line1": "9 Riverside",
+                    "line2": ""
+                },
+                "city": "Nanded",
+                "postcode": "431601",
+                "contact": "9876500060",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kiran Patankar",
+            "email": "user61@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500061",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kiran",
+                "lastName": "Patankar",
+                "address": {
+                    "line1": "44 Greenway",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416015",
+                "contact": "9876500061",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Devendra Rathod",
+            "email": "user62@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500062",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Devendra",
+                "lastName": "Rathod",
+                "address": {
+                    "line1": "5 Granite Rd",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416003",
+                "contact": "9876500062",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Mahesh Doke",
+            "email": "user63@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500063",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Mahesh",
+                "lastName": "Doke",
+                "address": {
+                    "line1": "18 Harbor View",
+                    "line2": ""
+                },
+                "city": "Ratnagiri",
+                "postcode": "415612",
+                "contact": "9876500063",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Swapnil Kharat",
+            "email": "user64@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500064",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Swapnil",
+                "lastName": "Kharat",
+                "address": {
+                    "line1": "9 Oakwood",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400025",
+                "contact": "9876500064",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Roshan Pawar",
+            "email": "user65@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500065",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Roshan",
+                "lastName": "Pawar",
+                "address": {
+                    "line1": "23 River St",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411028",
+                "contact": "9876500065",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Tanmay Jadhav",
+            "email": "user66@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500066",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Tanmay",
+                "lastName": "Jadhav",
+                "address": {
+                    "line1": "6 Park View",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416020",
+                "contact": "9876500066",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ajay Wable",
+            "email": "user67@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500067",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ajay",
+                "lastName": "Wable",
+                "address": {
+                    "line1": "4 Brookside",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411045",
+                "contact": "9876500067",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Deepak Mali",
+            "email": "user68@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500068",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Deepak",
+                "lastName": "Mali",
+                "address": {
+                    "line1": "12 Coral Street",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400018",
+                "contact": "9876500068",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Naveen Salve",
+            "email": "user69@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500069",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Naveen",
+                "lastName": "Salve",
+                "address": {
+                    "line1": "2 Willow Lane",
+                    "line2": ""
+                },
+                "city": "Solapur",
+                "postcode": "413003",
+                "contact": "9876500069",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Vikas More",
+            "email": "user70@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500070",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Vikas",
+                "lastName": "More",
+                "address": {
+                    "line1": "31 Pearl St",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411033",
+                "contact": "9876500070",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Neha Magar",
+            "email": "user71@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500071",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Neha",
+                "lastName": "Magar",
+                "address": {
+                    "line1": "5 Gardenia",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400026",
+                "contact": "9876500071",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Soniya Dange",
+            "email": "user72@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500072",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Soniya",
+                "lastName": "Dange",
+                "address": {
+                    "line1": "19 Brook St",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411060",
+                "contact": "9876500072",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kajal Talekar",
+            "email": "user73@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500073",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kajal",
+                "lastName": "Talekar",
+                "address": {
+                    "line1": "8 Lotus Park",
+                    "line2": ""
+                },
+                "city": "Thane",
+                "postcode": "400602",
+                "contact": "9876500073",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Jyoti Badgujar",
+            "email": "user74@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500074",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Jyoti",
+                "lastName": "Badgujar",
+                "address": {
+                    "line1": "22 Rosewood",
+                    "line2": ""
+                },
+                "city": "Nagpur",
+                "postcode": "440012",
+                "contact": "9876500074",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Bhavika Sutar",
+            "email": "user75@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500075",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Bhavika",
+                "lastName": "Sutar",
+                "address": {
+                    "line1": "14 Ivy Lane",
+                    "line2": ""
+                },
+                "city": "Jodhpur",
+                "postcode": "342001",
+                "contact": "9876500075",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Komal Gole",
+            "email": "user76@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500076",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Komal",
+                "lastName": "Gole",
+                "address": {
+                    "line1": "3 Hill Crest",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416006",
+                "contact": "9876500076",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Pranali Wagh",
+            "email": "user77@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500077",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Pranali",
+                "lastName": "Wagh",
+                "address": {
+                    "line1": "6 Rose Lane",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400014",
+                "contact": "9876500077",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Snehal Bari",
+            "email": "user78@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500078",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Snehal",
+                "lastName": "Bari",
+                "address": {
+                    "line1": "44 Pine St",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411011",
+                "contact": "9876500078",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Manasi Thoke",
+            "email": "user79@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500079",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Manasi",
+                "lastName": "Thoke",
+                "address": {
+                    "line1": "12 Lake Crescent",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416007",
+                "contact": "9876500079",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Asmita Mule",
+            "email": "user80@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500080",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Asmita",
+                "lastName": "Mule",
+                "address": {
+                    "line1": "9 Orchid Ave",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411020",
+                "contact": "9876500080",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Pritam Gayakwad",
+            "email": "user81@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500081",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Pritam",
+                "lastName": "Gayakwad",
+                "address": {
+                    "line1": "3 Cedar Lane",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416008",
+                "contact": "9876500081",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Shreyas Rane",
+            "email": "user82@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500082",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Shreyas",
+                "lastName": "Rane",
+                "address": {
+                    "line1": "27 Oakwood",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400036",
+                "contact": "9876500082",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Yogesh Bhujbal",
+            "email": "user83@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500083",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Yogesh",
+                "lastName": "Bhujbal",
+                "address": {
+                    "line1": "54 Hill View",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411021",
+                "contact": "9876500083",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kishor Thorat",
+            "email": "user84@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500084",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kishor",
+                "lastName": "Thorat",
+                "address": {
+                    "line1": "11 Riverbend",
+                    "line2": ""
+                },
+                "city": "Navi Mumbai",
+                "postcode": "400703",
+                "contact": "9876500084",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Pratik Zende",
+            "email": "user85@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500085",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Pratik",
+                "lastName": "Zende",
+                "address": {
+                    "line1": "9 Garden View",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411045",
+                "contact": "9876500085",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Siddharth Jadhav",
+            "email": "user86@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500086",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Siddharth",
+                "lastName": "Jadhav",
+                "address": {
+                    "line1": "6 Park Lane",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400010",
+                "contact": "9876500086",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Aniket Shirsat",
+            "email": "user87@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500087",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aniket",
+                "lastName": "Shirsat",
+                "address": {
+                    "line1": "44 Brook St",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400013",
+                "contact": "9876500087",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Harshal Kole",
+            "email": "user88@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500088",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Harshal",
+                "lastName": "Kole",
+                "address": {
+                    "line1": "19 Ocean Drive",
+                    "line2": ""
+                },
+                "city": "Ratnagiri",
+                "postcode": "415612",
+                "contact": "9876500088",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Rohan Kale",
+            "email": "user89@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500089",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Rohan",
+                "lastName": "Kale",
+                "address": {
+                    "line1": "12 Palm St",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411014",
+                "contact": "9876500089",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Om Deshpande",
+            "email": "user90@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500090",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Om",
+                "lastName": "Deshpande",
+                "address": {
+                    "line1": "3 Coral Road",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400092",
+                "contact": "9876500090",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Ananya Borse",
+            "email": "user91@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500091",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Ananya",
+                "lastName": "Borse",
+                "address": {
+                    "line1": "10 Park Ave",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416009",
+                "contact": "9876500091",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Siddhi Salunke",
+            "email": "user92@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500092",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Siddhi",
+                "lastName": "Salunke",
+                "address": {
+                    "line1": "8 Maple Street",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411023",
+                "contact": "9876500092",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Shravani Nikam",
+            "email": "user93@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500093",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Shravani",
+                "lastName": "Nikam",
+                "address": {
+                    "line1": "22 Ocean Ave",
+                    "line2": ""
+                },
+                "city": "Ratnagiri",
+                "postcode": "415611",
+                "contact": "9876500093",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Purva Ingle",
+            "email": "user94@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500094",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Purva",
+                "lastName": "Ingle",
+                "address": {
+                    "line1": "14 Hillcrest",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411026",
+                "contact": "9876500094",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Surbhi Chavan",
+            "email": "user95@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500095",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Surbhi",
+                "lastName": "Chavan",
+                "address": {
+                    "line1": "3 Willow Way",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400015",
+                "contact": "9876500095",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Tanisha Khairnar",
+            "email": "user96@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500096",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Tanisha",
+                "lastName": "Khairnar",
+                "address": {
+                    "line1": "11 Jasmine Lane",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411028",
+                "contact": "9876500096",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Aarohi Kumbhar",
+            "email": "user97@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500097",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Aarohi",
+                "lastName": "Kumbhar",
+                "address": {
+                    "line1": "9 River Street",
+                    "line2": ""
+                },
+                "city": "Kolhapur",
+                "postcode": "416011",
+                "contact": "9876500097",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Vedika Tambade",
+            "email": "user98@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500098",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Vedika",
+                "lastName": "Tambade",
+                "address": {
+                    "line1": "31 Ocean Rd",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400050",
+                "contact": "9876500098",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Kashish Mhatre",
+            "email": "user99@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500099",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Kashish",
+                "lastName": "Mhatre",
+                "address": {
+                    "line1": "2 Pearl Ave",
+                    "line2": ""
+                },
+                "city": "Pune",
+                "postcode": "411054",
+                "contact": "9876500099",
+                "isDefault": true
+            }
+        },
+        {
+            "name": "Muskan Mane",
+            "email": "user100@foodie.com",
+            "password": "Test@123",
+            "role": "user",
+            "phone": "9876500100",
+            "isBlocked": false,
+            "defaultAddress": {
+                "tag": "Home",
+                "firstName": "Muskan",
+                "lastName": "Mane",
+                "address": {
+                    "line1": "7 Sunset Rd",
+                    "line2": ""
+                },
+                "city": "Mumbai",
+                "postcode": "400007",
+                "contact": "9876500100",
+                "isDefault": true
+            }
         }
     ],
     "products": [

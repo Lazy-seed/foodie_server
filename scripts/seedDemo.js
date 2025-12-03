@@ -5,6 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import User from "../src/models/User.js";
 import Product from "../src/models/Product.js";
+import Address from "../src/models/addressModel.js"; // <-- new
 
 dotenv.config();
 
@@ -22,23 +23,59 @@ const seedDemo = async () => {
 
         // Seed Users
         for (const user of seedData.users) {
-            const existingUser = await User.findOne({ email: user.email });
-            if (!existingUser) {
-                await User.create(user);
-                console.log(`User created: ${user.email}`);
+            // Remove address from user object before creating User model (User schema likely doesn't accept defaultAddress)
+            const userData = { ...user };
+            const defaultAddress = userData.defaultAddress || null;
+            delete userData.defaultAddress;
+
+            let createdUser = await User.findOne({ email: userData.email });
+            if (!createdUser) {
+                createdUser = await User.create(userData);
+                console.log(`User created: ${userData.email}`);
             } else {
-                console.log(`User already exists: ${user.email}`);
+                console.log(`User already exists: ${userData.email}`);
+            }
+
+            // Create Address document for the user if defaultAddress is provided and Address doesn't already exist
+            if (defaultAddress) {
+                const existingAddress = await Address.findOne({ userId: createdUser._id });
+                if (!existingAddress) {
+                    await Address.create({
+                        userId: createdUser._id,
+                        addresses: [
+                            {
+                                tag: defaultAddress.tag || "Home",
+                                firstName: defaultAddress.firstName,
+                                lastName: defaultAddress.lastName,
+                                address: {
+                                    line1: defaultAddress.address.line1,
+                                    line2: defaultAddress.address.line2 || ""
+                                },
+                                city: defaultAddress.city,
+                                postcode: defaultAddress.postcode,
+                                contact: defaultAddress.contact,
+                                isDefault: defaultAddress.isDefault === undefined ? true : defaultAddress.isDefault
+                            }
+                        ],
+                        maxAddresses: defaultAddress.maxAddresses || 5
+                    });
+                    console.log(`Address created for user: ${userData.email}`);
+                } else {
+                    console.log(`Address already exists for user: ${userData.email}`);
+                }
             }
         }
 
         // Seed Products
-        for (const product of seedData.products) {
-            const existingProduct = await Product.findOne({ title: product.title });
-            if (!existingProduct) {
-                await Product.create(product);
-                console.log(`Product created: ${product.title}`);
-            } else {
-                console.log(`Product already exists: ${product.title}`);
+        if (Array.isArray(seedData.products)) {
+            for (const product of seedData.products) {
+                const existingProduct = await Product.findOne({ title: product.title });
+                if (!existingProduct) {
+                    await Product.create(product);
+                    console.log(`Product created: ${product.title}`);
+                } else {
+                    console.log(`Product already exists: ${product.title}`);
+                }
             }
         }
 
